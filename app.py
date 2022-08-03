@@ -24,14 +24,14 @@ app = Flask(__name__)
 # Generic Python function that returns "Hello world!"
 def index():
     return "Hello world!"
-
+'''
 # Annotation that allows the function to be hit at the specific URL. Indicates a GET HTTP method.
 @app.route("/library/v1.0/books", methods=["GET"])
 # Function that will run when the endpoint is hit.
 def get_books():
     # Returns a JSON of the books defined above. jsonify is a Flask function that serializes the object for us.
     return jsonify({"books": books})
-
+'''
 # Checks to see if the name of the package is the run as the main package.
 if __name__ == "__main__":
     # Runs the Flask application only if the main.py file is being run.
